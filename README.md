@@ -19,4 +19,9 @@ BMW E36 instrument cluster as Clock
 |      3     |     Black    |        GND        |             |
 |      4     |     Black    |       Speed       |      4      |
 
+#Circuit
+![circuit] https://raw.githubusercontent.com/fast90/E36Clock/master/images/circuit.png
+# Pictures
+![front] https://raw.githubusercontent.com/fast90/E36Clock/master/images/front.jpeg
+![back] https://raw.githubusercontent.com/fast90/E36Clock/master/images/back.jpeg
 
