@@ -1,5 +1,5 @@
 # E36Clock
-BMW E36 instrument cluster as Clock
+Radio controlled clock using a BMW E36 instrument cluster as Display.
 
 # Wiring
 | Pin Number | Socket color |      Function     | Arduino Pin |
