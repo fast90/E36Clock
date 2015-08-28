@@ -15,23 +15,19 @@
 
 #define DEBUG 1
 
-
 DCF77 DCF = DCF77(DCF_PIN,DCF_INTERRUPT);
 
 Tone rpm;
 Tone kmh;
 
-
 void setup() {
   DCF.Start();
   Serial.begin(9600);
-
+  
   pinMode(TIME_LED_OK,OUTPUT);
   pinMode(TIME_LED_ERR,OUTPUT);
   pinMode(FUEL_PIN,OUTPUT);
   pinMode(WATER_PIN,OUTPUT);
-
-  analogWrite(FUEL_PIN,45);
   
   rpm.begin(RPM_PIN);
   kmh.begin(SPEED_PIN);
@@ -94,10 +90,6 @@ void printDigits(int digits){
   Serial.print(digits);
 }
 
-
-
-
-
 void updateGauges() {
   /*---WATER GAUGE---*/
   /*Water Temperature, Red = PM, Blue = AM*/
@@ -118,7 +110,6 @@ void updateGauges() {
     analogWrite(FUEL_PIN,70);
   else if(hour()<=23)
     analogWrite(FUEL_PIN,15);
-  
   /*---END FUEL GAUGE---*/
   
   /*---RPM GAUGE---*/
@@ -147,3 +138,4 @@ void updateGauges() {
   /*---END SPEED GAUGE---*/
   
 }
+
